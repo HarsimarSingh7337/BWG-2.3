@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="red">#FF0000</color>
+    <color name="mehroon1">#BC3232</color>
+    <color name="lightRed">#A31B24</color>
+    <color name="green">#1EA433</color>
+    <color name="lightGreen">#4CB96B</color>
+    <color name="grey">#C0C0C0</color>
+    <color name="transluscent">#44000000</color>
+</resources>

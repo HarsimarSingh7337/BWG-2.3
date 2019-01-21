@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="16dp"
+    android:gravity="center_vertical|center"
+    android:layout_height="match_parent"
+    tools:context=".Search_ISBN_Options">
+
+    <Button
+        android:id="@+id/manualSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/manual_search"
+        style="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/white"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/custom_button_layout" />
+
+    <Button
+        android:id="@+id/scannerSearch"
+        android:layout_below="@id/manualSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/scanner_search"
+        style="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/white"
+        android:background="@drawable/custom_button_layout" />
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    android:fillViewport="true"
+    tools:context=".fragment_finish_show_options">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:gravity="center|center_vertical"
+        android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/showlistbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/showlist"
+        android:textSize="40sp"
+        android:textColor="@color/white"
+        android:background="@drawable/custom_button_layout" />
+
+    <Button
+        android:id="@+id/submitbtn"
+        android:layout_below="@id/showlistbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:text="@string/submit"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_button_layout" />
+
+    <Button
+        android:id="@+id/discardbtn"
+        android:layout_below="@id/submitbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:text="@string/discard"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_button_layout" />
+
+    </RelativeLayout>
+</ScrollView>

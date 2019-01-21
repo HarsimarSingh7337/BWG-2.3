@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mehroon1">
+
+    <LinearLayout
+        android:id="@+id/container_navback"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:layout_alignParentLeft="true">
+
+        <ImageView
+            android:id="@+id/actionbar_backbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/nav_back"
+            android:layout_gravity="center"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_navlogo"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@+id/container_navback"
+        android:layout_marginStart="5dp"
+        android:gravity="center"
+        android:layout_toRightOf="@+id/container_navback"
+        android:layout_marginLeft="5dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/actionbar_logo"
+            android:layout_gravity="center"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@id/container_navlogo"
+        android:gravity="center"
+        android:layout_marginStart="5dp"
+        android:layout_toRightOf="@id/container_navlogo"
+        android:layout_marginLeft="5dp"
+        tools:ignore="RtlHardcoded">
+
+        <TextView
+            android:id="@+id/actionbar_appname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_namee"
+            android:textColor="@color/white"
+            style="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:layout_alignParentRight="true">
+
+        <ImageView
+            android:id="@+id/actionbar_dropdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/nav_down"
+            android:layout_gravity="center" />
+    </LinearLayout>
+</RelativeLayout>

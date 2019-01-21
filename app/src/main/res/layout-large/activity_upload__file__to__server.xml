@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_16sdp"
+    tools:context=".Upload_File_To_Server">
+
+    <TextView
+        android:id="@+id/filepath_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="File path: "
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/filepath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:textSize="@dimen/_14ssp"
+        android:textStyle="italic"
+        app:layout_constraintTop_toBottomOf="@id/filepath_label"
+        android:layout_marginTop="@dimen/_10sdp"/>
+
+    <Button
+        android:id="@+id/btn_selectfile"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/selectile"
+        style="@style/TextAppearance.AppCompat.Large"
+        android:background="@drawable/custom_button_layout"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/filepath"
+        android:layout_marginTop="@dimen/_20sdp"/>
+
+    <Button
+        android:id="@+id/uploadfilebtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/TextAppearance.AppCompat.Large"
+        android:paddingBottom="@dimen/_10sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@id/btn_selectfile"
+        android:text="Upload File"
+        android:clickable="false"
+        android:layout_marginBottom="@dimen/_10sdp"/>
+
+</android.support.constraint.ConstraintLayout>

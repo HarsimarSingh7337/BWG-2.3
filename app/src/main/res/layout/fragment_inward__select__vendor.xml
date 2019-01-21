@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical|center"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".Inward_Select_Vendor">
+
+    <LinearLayout
+        android:id="@+id/container_spinner"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@drawable/shape_outline_red"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_vendor_name"
+            android:spinnerMode="dropdown"
+            android:elevation="4dp"
+            tools:targetApi="lollipop"/>
+
+        <!--<ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/drop_down_arrow"/>-->
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submitVendor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/container_spinner"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:background="@drawable/custom_button_layout"
+        android:text="@string/submit"
+        style="@style/TextAppearance.AppCompat.Medium"/>
+
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mehroon1">
+
+    <LinearLayout
+        android:id="@+id/container_navlogo"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        tools:ignore="RtlCompat">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/actionbar_logo"
+            android:layout_gravity="center"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@id/container_navlogo"
+        android:gravity="center"
+        android:layout_marginStart="5dp">
+
+        <TextView
+            android:id="@+id/custom_actionbar1_appname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_namee"
+            android:textColor="@color/white"
+            style="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="5dp"
+        android:layout_toStartOf="@id/container_navoption"
+        android:gravity="center"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/container_navoption">
+
+        <ImageView
+            android:id="@+id/actionbar_dropdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/nav_down"
+            android:layout_gravity="center"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/container_navoption"
+        android:layout_alignParentEnd="true"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/actionbar_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/option_menu"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+</RelativeLayout>
